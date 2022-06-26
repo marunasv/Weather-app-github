@@ -1,0 +1,48 @@
+body {
+  background: blue;
+  margin: 20px 100px;
+}
+.container {
+  padding: 20px;
+  background-color: #61b5f4;
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+  color: white;
+}
+h2 {
+  text-align: center;
+}
+.d-flex {
+  padding: 20px;
+  margin: 20px;
+}
+.card {
+  display: block;
+  margin: 0 auto;
+}
+.card-img-top {
+  display: block;
+  margin: 40px auto;
+  width: 200px;
+}
+.image-weather {
+  text-align: center;
+}
+h5 {
+  text-align: center;
+}
+.card-text {
+  text-align: center;
+}
+.weather-today {
+  text-align: center;
+  line-height: 2cm;
+}
+.weather-5-days {
+  text-align: center;
+  line-height: 1cm;
+}

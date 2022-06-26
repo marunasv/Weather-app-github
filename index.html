@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Weather Forecast</title>
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather Forecast</h1>
+      <h2></h2>
+
+      <p id="current-time"></p>
+
+      <form class="d-flex" role="search" id="city-search-form">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Enter city"
+          aria-label="Search"
+          id="search-city"
+        />
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <img
+              src="images/Kyiv-snowing.jpeg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Weather in <span id="current-city">Kyiv</span> now
+              </h5>
+              <p class="card-text">
+                <span id="temperature"> -9</span
+                ><span class="units">
+                  <a href="#" id="celsius-link">˚C</a>
+                  <a href="#" id="fahrenheit-link">˚F</a>
+                </span>
+                <br />
+                24 / 02 <br />
+                06:17
+              </p>
+              <a href="#" class="btn btn-primary">Weather in Kyiv per hours</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <img
+            src="images/cloud-snowing.png"
+            class="card-img-top"
+            alt="Snowing"
+          />
+          <p class="image-weather">Snowing</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <p class="weather-today">
+            Today<br />
+
+            -7˚/ -4˚ <br />
+            Feels like: -5˚ <br />
+            Wind: 5 km/h <br />
+
+            Humidity: 89%
+          </p>
+        </div>
+
+        <div class="col">
+          <p class="weather-5-days">
+            Weather in Kyiv for 5 days<br />
+            Friday 🌨 <br />
+
+            -6˚/-5˚ <br />
+
+            Saturday ⛅️ <br />
+
+            -7˚/-4˚ <br />
+
+            Sunday ❄️ <br />
+
+            -8˚/-5˚ <br />
+
+            Monday 🌨 <br />
+
+            -9˚/-6˚ <br />
+
+            Tuesday 🌨 <br />
+
+            -8˚/-5˚
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="src/index.js"></script>
+</html>
